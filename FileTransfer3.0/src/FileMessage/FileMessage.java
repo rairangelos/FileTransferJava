@@ -1,13 +1,12 @@
 package FileMessage;
 
-
 import java.io.File;
 import java.io.Serializable;
 
-public class FileMessage implements Serializable{
+public class FileMessage implements Serializable {
 	private String cliente;
 	private File file;
-	
+
 	public FileMessage(String cliente, File file) {
 		this.cliente = cliente;
 		this.file = file;
@@ -16,7 +15,7 @@ public class FileMessage implements Serializable{
 	public FileMessage(String cliente) {
 		this.cliente = cliente;
 	}
-	
+
 	public FileMessage() {
 	}
 
@@ -35,5 +34,5 @@ public class FileMessage implements Serializable{
 	public void setFile(File file) {
 		this.file = file;
 	}
-	
+
 }
